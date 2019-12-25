@@ -6,18 +6,49 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using WPFMVVMExample.Commands;
 using WPFMVVMExample.Model;
 
 namespace WPFMVVMExample.ViewModel
 {
-    public class UserViewModel
+    public class UserViewModel :ViewModelBase
     {
+        private string _imagePath;
+
+        public string ImagePath
+        {
+            get
+            {
+                return _imagePath;
+            }
+            set
+            {
+                if (_imagePath != value)
+                {
+                    _imagePath = value;
+                    OnPropertyChanged("ImagePath");
+                }
+            }
+        }
+
+       
+
+        private ICommand _openFileCommand;
+
+        public ICommand OpenFileCommand
+        {
+            get { return _openFileCommand; }
+        }
+
+      
+
+
 
 
         public DelegateCommand ShowCommand { get; set; }
         public DelegateCommand BtnDeleteCommand { get; set; }
         public UserModel User { get; set; }
-        public string ImagePath { get; internal set; }
+
 
         public UserViewModel()
         {
@@ -27,6 +58,8 @@ namespace WPFMVVMExample.ViewModel
             ShowCommand.ExecuteCommand = new Action<object>(ShowUserImage);
             BtnDeleteCommand = new DelegateCommand();
             BtnDeleteCommand.ExecuteCommand = new Action<object>(BtnDelete);
+            _openFileCommand = new OpenFileCommand(this);
+
 
 
         }

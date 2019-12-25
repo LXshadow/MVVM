@@ -26,7 +26,7 @@ namespace WPFMVVMExample.Model
             set
             {
                 userEmail = value;
-                NotifyPropertyChanged("userEmail");
+                OnPropertyChanged("userEmail");
             }
         }
         private string userImage;
@@ -39,18 +39,27 @@ namespace WPFMVVMExample.Model
             set
             {
                 userImage = value;
-                NotifyPropertyChanged("userImage");
+                OnPropertyChanged("userImage");
             }
         }
 
 
 
+        /* public event PropertyChangedEventHandler PropertyChanged;
+         public void onPropertyChanged(string propertyName)
+         {
+             if (PropertyChanged != null)
+             {
+                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+             }
+         }*/
         public event PropertyChangedEventHandler PropertyChanged;
-        public void NotifyPropertyChanged(string propertyName)
+
+        protected virtual void OnPropertyChanged(string propName)
         {
             if (PropertyChanged != null)
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                PropertyChanged(this, new PropertyChangedEventArgs(propName));
             }
         }
         public void Load(string aFileName)
@@ -66,7 +75,7 @@ namespace WPFMVVMExample.Model
                 if (_SourceTexts == value) return;
                 _SourceTexts = value;
 
-                NotifyPropertyChanged(nameof(SourceTexts));
+                OnPropertyChanged(nameof(SourceTexts));
             }
         }
         private string[] _SourceTexts;
@@ -77,7 +86,7 @@ namespace WPFMVVMExample.Model
             {
                 if (_Texts == value) return;
                 _Texts = value;
-                NotifyPropertyChanged(nameof(Texts));
+                OnPropertyChanged(nameof(Texts));
             }
         }
         private List<string> _Texts;
