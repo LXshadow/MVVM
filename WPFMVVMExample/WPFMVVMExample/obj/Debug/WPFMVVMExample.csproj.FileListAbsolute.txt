@@ -1,0 +1,14 @@
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\bin\Debug\WPFMVVMExample.exe.config
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\bin\Debug\WPFMVVMExample.exe
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\bin\Debug\WPFMVVMExample.pdb
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample.csprojAssemblyReference.cache
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\MainWindow.g.cs
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\App.g.cs
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample_MarkupCompile.cache
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample_MarkupCompile.lref
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\MainWindow.baml
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample.g.resources
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample.Properties.Resources.resources
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample.csproj.GenerateResource.cache
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample.exe
+C:\Users\LX\source\repos\WPFMVVMExample\WPFMVVMExample\obj\Debug\WPFMVVMExample.pdb
